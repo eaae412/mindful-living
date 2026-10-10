@@ -11,7 +11,6 @@
 
   // Tour requests from the contact page are emailed to this address.
   var TOUR_EMAIL = "contact@mindfulcareliving.com";
-  var PHONE_DISPLAY = "(612) 483-1978";
 
   var root = document.documentElement;
 
@@ -205,15 +204,13 @@
         form.reset();
         showStatus(
           "success",
-          "Thank you, " + escapeHTML(name) + "! We received your tour request and will call you soon to confirm a time. " +
-          'If you would like to talk sooner, call us at <a href="tel:+16124831978">' + PHONE_DISPLAY + "</a>."
+          "Thank you, " + escapeHTML(name) + "! We received your tour request and will contact you soon to confirm a time."
         );
       })
       .catch(function () {
         showStatus(
           "error",
-          "Sorry, your request could not be sent. Please call us at " +
-          '<a href="tel:+16124831978">' + PHONE_DISPLAY + "</a> or email " +
+          "Sorry, your request could not be sent. Please email us at " +
           '<a href="mailto:' + TOUR_EMAIL + '">' + TOUR_EMAIL + "</a> and we will set up your tour."
         );
       })

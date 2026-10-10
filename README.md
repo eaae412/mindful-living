@@ -18,7 +18,7 @@ It is a simple website made of plain files. There is nothing to install, and you
 | `contact.html` | **Contact** page (address, map, tour request form) |
 | `images/` | All the photos and the logo |
 | `css/styles.css` | Colors, fonts, and layout (you rarely need to touch this) |
-| `js/main.js` | Small helpers: the phone menu, the photo viewer, and the tour form |
+| `js/main.js` | Small helpers: the menu on phones, the photo viewer, and the tour form |
 
 ---
 
@@ -131,7 +131,7 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 
 ## 7. Other common changes
 
-**Phone number or email address:** these appear on every page. Search each page file for the old number, e.g. `483-1978`, and change every match, including the `tel:+16124831978` links (the version phones use to dial). The email address also appears in `js/main.js` (near the top, labeled `TOUR_EMAIL`) — that is where tour requests are sent.
+**Email address:** it appears on every page. Search each page file for `contact@mindfulcareliving.com` and change every match. It also appears in `js/main.js` (near the top, labeled `TOUR_EMAIL`) — that is where tour requests are sent.
 
 **Colors:** open `css/styles.css`. The colors are listed together at the very top, each with a note saying what it's used for.
 
@@ -140,7 +140,7 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 ## Accessibility features built in
 
 - Large, easy-to-read text (Atkinson Hyperlegible, a font designed for readers with low vision) and strong color contrast
-- Big, clearly labeled buttons; phone number at the top of every page with tap-to-call on phones
+- Big, clearly labeled buttons, with "Schedule a Tour" and "Email Us" on every page
 - Works with a keyboard alone, with a visible outline showing where you are, and a "Skip to main content" link
 - Descriptions on every photo for screen readers
 - Works on phones, tablets, and computers, and still works if JavaScript is turned off

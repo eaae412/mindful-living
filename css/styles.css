@@ -136,7 +136,6 @@ strong { font-weight: 700; }
   border-radius: 4px;
 }
 
-.topbar :focus-visible,
 .site-footer :focus-visible,
 .cta-band :focus-visible {
   outline-color: var(--focus-on-dark);
@@ -257,57 +256,6 @@ strong { font-weight: 700; }
 
 @media (max-width: 479px) {
   .btn-group .btn { width: 100%; }
-}
-
-/* --------------------------------------------------------------------------
-   Top bar — phone number on every page (tap to call on phones)
-   -------------------------------------------------------------------------- */
-
-.topbar {
-  background: var(--navy);
-  color: var(--white);
-}
-
-.topbar__inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-  padding-block: 0.5rem;
-}
-
-.topbar__phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  min-height: 2.75rem;
-  color: var(--white);
-  font-size: 1.1rem;
-  text-decoration: none;
-}
-
-.topbar__phone strong {
-  font-size: 1.15em;
-  letter-spacing: 0.01em;
-}
-
-.topbar__phone:hover {
-  color: var(--white);
-  text-decoration: underline;
-}
-
-.topbar__hours {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 767px) {
-  .topbar__hours { display: none; }
-  .topbar__phone { flex: 1 1 auto; }
 }
 
 /* --------------------------------------------------------------------------
@@ -623,6 +571,8 @@ strong { font-weight: 700; }
 }
 
 .section--sage .icon-badge { background: var(--white); }
+
+.section--sage .audience__panel .icon-badge { background: var(--sage-soft); }
 
 /* Picture + text side by side */
 .split {
@@ -1292,7 +1242,6 @@ strong { font-weight: 700; }
    -------------------------------------------------------------------------- */
 
 @media print {
-  .topbar,
   .menu-toggle,
   .site-nav,
   .header-cta,
