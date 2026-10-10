@@ -53,7 +53,7 @@ The tour form sends requests to **contact@mindfulcareliving.com** using a free s
 2. Check the **contact@mindfulcareliving.com** inbox (and the spam folder) for an email from FormSubmit.
 3. Click the **Activate Form** button in that email.
 
-That's it. From then on, every tour request arrives in that inbox as an email. The form asks only for **name, phone, email (optional), and preferred date**. It does **not** ask for any medical information.
+That's it. From then on, every tour request arrives in that inbox as an email. The form asks only for **name, phone, email, and preferred date**. It does **not** ask for any medical information.
 
 ---
 
