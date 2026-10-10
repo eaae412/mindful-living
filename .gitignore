@@ -1,0 +1,3 @@
+# Local API keys for skill scripts (e.g. design logo generation)
+.env
+.claude/skills/**/.env
