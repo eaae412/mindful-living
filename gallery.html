@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Mindful Care Living</title>
+  <meta name="description" content="Photos of the Mindful Care Living home in Brooklyn Center, Minnesota.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery | Mindful Care Living">
+  <meta property="og:description" content="Photos of the Mindful Care Living home in Brooklyn Center, Minnesota.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Lora:ital,wght@0,600;0,700;1,500&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { if (localStorage.getItem("mcl-large-text") === "1") document.documentElement.classList.add("text-large"); } catch (e) {}
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+  <!-- ===== TOP BAR: phone number (shown on every page) ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="topbar__phone" href="tel:+16124831978">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call us: <strong>(612) 483-1978</strong></span>
+      </a>
+      <p class="topbar__hours"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Tours by appointment: Mon–Sat, 9am–5pm</p>
+      <button type="button" class="text-size-toggle" aria-pressed="false" hidden>
+        <span class="text-size-toggle__a" aria-hidden="true">A+</span> Larger text
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== HEADER: logo and menu ===== -->
+  <div class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="80" height="82">
+        <span>
+          <span class="brand__name">Mindful Care Living</span>
+          <span class="brand__tag">Assisted Living · Brooklyn Center, MN</span>
+        </span>
+      </a>
+      <a class="btn btn-primary header-cta" href="contact.html#tour"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Schedule a Tour</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="care.html">Care &amp; Services</a></li>
+          <li><a href="amenities.html">Amenities &amp; Daily Life</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary site-nav__cta" href="contact.html#tour"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Schedule a Tour</a>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== PAGE TITLE ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Take a look around</p>
+        <h1>Gallery</h1>
+        <p class="lead">A glimpse of our home. The best way to get to know us is to visit in person.</p>
+      </div>
+    </section>
+
+    <!-- ===== PHOTOS =====
+         To change a photo, upload a new photo to the "images" folder with the
+         SAME file name as the one you are replacing (for example living-room.jpg).
+         To change a caption, edit the text inside <span class="gallery__title">. -->
+    <section class="section" aria-labelledby="photos-title">
+      <div class="container">
+        <h2 id="photos-title" class="visually-hidden">Photos of our home</h2>
+        <ul class="gallery">
+          <li>
+            <figure>
+              <a href="images/home-front.jpg" data-lightbox>
+                <img src="images/home-front.jpg" alt="The front of the Mindful Care Living home" width="1200" height="900">
+              </a>
+              <figcaption><span class="gallery__title">Our home</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/living-room.jpg" data-lightbox>
+                <img src="images/living-room.jpg" alt="The comfortable living room at Mindful Care Living" width="1200" height="900">
+              </a>
+              <figcaption><span class="gallery__title">Living room</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/dining-area.jpg" data-lightbox>
+                <img src="images/dining-area.jpg" alt="The dining table set for a shared meal" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Dining area</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/kitchen.jpg" data-lightbox>
+                <img src="images/kitchen.jpg" alt="The kitchen at Mindful Care Living" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Kitchen</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/bedroom.jpg" data-lightbox>
+                <img src="images/bedroom.jpg" alt="A bright, comfortable resident bedroom" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Resident bedroom</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/bathroom.jpg" data-lightbox>
+                <img src="images/bathroom.jpg" alt="A clean, accessible bathroom" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Bathroom</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/backyard.jpg" data-lightbox>
+                <img src="images/backyard.jpg" alt="The backyard and outdoor space at Mindful Care Living" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Outdoor space</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/activities.jpg" data-lightbox>
+                <img src="images/activities.jpg" alt="Residents enjoying an activity together" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Activities</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="images/team.jpg" data-lightbox>
+                <img src="images/team.jpg" alt="The Mindful Care Living care team" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span class="gallery__title">Our team</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Larger photo viewer (used when a photo is clicked) -->
+    <dialog id="lightbox" class="lightbox" aria-label="Larger photo">
+      <img src="" alt="">
+      <div class="lightbox__bar">
+        <p class="lightbox__caption"></p>
+        <button type="button" class="btn btn-secondary lightbox__close"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg> Close</button>
+      </div>
+    </dialog>
+
+    <!-- ===== VISIT US ===== -->
+    <section class="cta-band" aria-labelledby="visit-title">
+      <div class="container">
+        <h2 id="visit-title">Photos only tell part of the story</h2>
+        <p>Come visit, meet our team, and feel the warmth of our home in person.</p>
+        <div class="btn-group">
+          <a class="btn btn-light" href="contact.html#tour"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Schedule a Tour</a>
+          <a class="btn btn-outline-light" href="tel:+16124831978"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (612) 483-1978</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (shown on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="" width="80" height="82">
+          <span>Mindful Care Living<br>Assisted Living</span>
+        </div>
+        <p>A safe, supportive, and welcoming home for adults who need assistance with daily living — with dignity, independence, and quality of life.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Contact Us</h2>
+        <ul class="footer-list">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <a href="https://www.google.com/maps/search/?api=1&amp;query=2712+63rd+Ave+N,+Brooklyn+Center,+MN+55430">2712 63rd Ave N<br>Brooklyn Center, MN 55430</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+16124831978">(612) 483-1978</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> <a href="mailto:contact@mindfulcareliving.com">contact@mindfulcareliving.com</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> <span>Tours by appointment:<br>Mon–Sat, 9am–5pm</span></li>
+        </ul>
+      </div>
+      <nav aria-label="Footer menu">
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="care.html">Care &amp; Services</a></li>
+          <li><a href="amenities.html">Amenities &amp; Daily Life</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <!-- EDIT: replace the bracketed text with your license information -->
+      <p>Licensing: [License type and number to be added]</p>
+      <p>&copy; <span data-year>2026</span> Mindful Care Living Assisted Living INC. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
