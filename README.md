@@ -18,7 +18,7 @@ It is a simple website made of plain files. There is nothing to install, and you
 | `contact.html` | **Contact** page (address, map, tour request form) |
 | `images/` | All the photos and the logo |
 | `css/styles.css` | Colors, fonts, and layout (you rarely need to touch this) |
-| `js/main.js` | Small helpers: the phone menu, the "Larger text" button, the photo viewer, and the tour form |
+| `js/main.js` | Small helpers: the phone menu, the photo viewer, and the tour form |
 
 ---
 
@@ -97,9 +97,9 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 | File name | Where it appears |
 |---|---|
 | `home-front.jpg` | Home page (top), Gallery |
-| `living-room.jpg` | Home page, Gallery |
+| `dining-together.jpg` | Home page (Welcome section) |
+| `living-room.jpg` | Gallery |
 | `backyard.jpg` | About Us, Gallery |
-| `team.jpg` | About Us, Gallery |
 | `bedroom.jpg` | Care & Services (Assisted Living), Gallery |
 | `caregiver-support.jpg` | Care & Services (24/7 Personal Care) |
 | `transportation.jpg` | Care & Services (Daily Activities) |
@@ -113,7 +113,7 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 
 **Important — residents' privacy:** before posting any photo that shows a resident, get their written permission (or their legal representative's). Photos of rooms, the outside of the home, and staff who agree to it are always safe choices.
 
-**The logo** is `images/logo.png`. The current logo file is quite small (80 × 82 pixels). If you have a larger version (at least 300 pixels wide, ideally with a transparent background), upload it with the name `logo.png` to make it look sharper.
+**The logo** is `images/logo.png` (256 × 256 pixels, transparent background). To change it, upload a new square logo with the same name.
 
 ---
 
@@ -140,7 +140,6 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 ## Accessibility features built in
 
 - Large, easy-to-read text (Atkinson Hyperlegible, a font designed for readers with low vision) and strong color contrast
-- A **"Larger text"** button at the top of every page (the site remembers the choice)
 - Big, clearly labeled buttons; phone number at the top of every page with tap-to-call on phones
 - Works with a keyboard alone, with a visible outline showing where you are, and a "Skip to main content" link
 - Descriptions on every photo for screen readers

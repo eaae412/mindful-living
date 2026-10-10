@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>
     document.documentElement.classList.add("js");
-    try { if (localStorage.getItem("mcl-large-text") === "1") document.documentElement.classList.add("text-large"); } catch (e) {}
   </script>
   <script src="js/main.js" defer></script>
 </head>
@@ -31,9 +30,6 @@
         <span>Call us: <strong>(612) 483-1978</strong></span>
       </a>
       <p class="topbar__hours"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Tours by appointment: Mon–Sat, 9am–5pm</p>
-      <button type="button" class="text-size-toggle" aria-pressed="false" hidden>
-        <span class="text-size-toggle__a" aria-hidden="true">A+</span> Larger text
-      </button>
     </div>
   </div>
 
@@ -41,7 +37,7 @@
   <div class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="" width="80" height="82">
+        <img src="images/logo.png" alt="" width="256" height="256">
         <span>
           <span class="brand__name">Mindful Care Living</span>
           <span class="brand__tag">Assisted Living · Brooklyn Center, MN</span>
@@ -103,29 +99,6 @@
       </div>
     </section>
 
-    <!-- ===== OUR TEAM ===== -->
-    <section class="section" aria-labelledby="team-title">
-      <div class="container split split--reverse">
-        <figure class="split__media">
-          <!-- PHOTO: replace images/team.jpg with a photo of your team -->
-          <img src="images/team.jpg" alt="The Mindful Care Living care team" width="1200" height="900" loading="lazy">
-        </figure>
-        <div>
-          <h2 id="team-title">Our Team</h2>
-          <p>We believe exceptional care begins with seeing the person behind the needs. Every individual has a unique story, and we are committed to honoring that story through the way we listen, communicate, and provide support.</p>
-          <p>Our approach is built on compassion, patience, trust, and respect. We strive to create an environment where residents feel comfortable being themselves, families feel confident in the care their loved ones receive, and meaningful relationships have the opportunity to grow.</p>
-          <p>At Mindful Care Living, we know that caring for someone means more than helping them through the day. It means celebrating their individuality, encouraging their independence, and making sure they never feel that their needs make them any less deserving of a fulfilling life.</p>
-          <h3>What guides us</h3>
-          <ul class="values">
-            <li><span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span> Compassion</li>
-            <li><span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span> Patience</li>
-            <li><span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span> Trust</li>
-            <li><span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span> Respect</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- ===== CLOSING QUOTE ===== -->
     <section class="section section--sage" aria-label="Our promise">
       <div class="container quote">
@@ -163,7 +136,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="images/logo.png" alt="" width="80" height="82">
+          <img src="images/logo.png" alt="" width="256" height="256">
           <span>Mindful Care Living<br>Assisted Living</span>
         </div>
         <p>A safe, supportive, and welcoming home for adults who need assistance with daily living — with dignity, independence, and quality of life.</p>
