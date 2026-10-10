@@ -43,7 +43,6 @@
 /* --------------------------------------------------------------------------
    Base
    Text is intentionally large: 18px on phones, up to 20px on computers.
-   The "Larger text" button at the top of each page makes it bigger still.
    -------------------------------------------------------------------------- */
 
 *,
@@ -65,12 +64,6 @@ html {
 
 @media (min-width: 1100px) {
   html { font-size: 125%; } /* 20px */
-}
-
-html.text-large { font-size: 131.25%; } /* 21px */
-
-@media (min-width: 768px) {
-  html.text-large { font-size: 143.75%; } /* 23px */
 }
 
 body {
@@ -109,6 +102,7 @@ h3 {
   font-weight: 700;
   line-height: 1.2;
   text-wrap: balance;
+  overflow-wrap: normal; /* never split a word across lines */
 }
 
 h1 { font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.25rem); }
@@ -309,32 +303,6 @@ strong { font-weight: 700; }
   gap: 0.5em;
   margin: 0;
   font-size: 0.95rem;
-}
-
-.text-size-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-  min-height: 2.75rem;
-  padding: 0.35em 1em;
-  border: 2px solid var(--white);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--white);
-  font: 700 0.95rem/1.2 var(--font-body);
-  cursor: pointer;
-}
-
-.text-size-toggle:hover { background: rgba(255, 255, 255, 0.14); }
-
-.text-size-toggle[aria-pressed="true"] {
-  background: var(--white);
-  color: var(--navy);
-}
-
-.text-size-toggle__a {
-  font-family: var(--font-heading);
-  font-size: 1.2em;
 }
 
 @media (max-width: 767px) {
@@ -700,7 +668,12 @@ strong { font-weight: 700; }
 
 @media (min-width: 1100px) {
   .cards--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1200px) {
   .cards--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cards--4 .card { padding: 1.5rem; }
+  .cards--4 .card h3 { font-size: 1.3rem; }
 }
 
 .card {
@@ -949,8 +922,8 @@ strong { font-weight: 700; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 1024px) {
-  .gallery { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 1100px) {
+  .gallery { grid-template-columns: repeat(4, 1fr); }
 }
 
 .gallery figure {

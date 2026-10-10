@@ -35,32 +35,6 @@
     });
   }
 
-  /* ---------- "Larger text" button (remembered between visits) ---------- */
-  var sizeButton = document.querySelector(".text-size-toggle");
-
-  function readTextPref() {
-    try { return localStorage.getItem("mcl-large-text") === "1"; } catch (e) { return false; }
-  }
-
-  function saveTextPref(on) {
-    try { localStorage.setItem("mcl-large-text", on ? "1" : "0"); } catch (e) { /* ignore */ }
-  }
-
-  function applyTextSize(on) {
-    root.classList.toggle("text-large", on);
-    if (sizeButton) sizeButton.setAttribute("aria-pressed", String(on));
-  }
-
-  if (sizeButton) {
-    sizeButton.hidden = false;
-    applyTextSize(readTextPref());
-    sizeButton.addEventListener("click", function () {
-      var on = !root.classList.contains("text-large");
-      applyTextSize(on);
-      saveTextPref(on);
-    });
-  }
-
   /* ---------- Current year in the footer ---------- */
   var yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());

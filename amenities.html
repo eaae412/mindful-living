@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>
     document.documentElement.classList.add("js");
-    try { if (localStorage.getItem("mcl-large-text") === "1") document.documentElement.classList.add("text-large"); } catch (e) {}
   </script>
   <script src="js/main.js" defer></script>
 </head>
@@ -31,9 +30,6 @@
         <span>Call us: <strong>(612) 483-1978</strong></span>
       </a>
       <p class="topbar__hours"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Tours by appointment: Mon–Sat, 9am–5pm</p>
-      <button type="button" class="text-size-toggle" aria-pressed="false" hidden>
-        <span class="text-size-toggle__a" aria-hidden="true">A+</span> Larger text
-      </button>
     </div>
   </div>
 
@@ -41,7 +37,7 @@
   <div class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="" width="80" height="82">
+        <img src="images/logo.png" alt="" width="256" height="256">
         <span>
           <span class="brand__name">Mindful Care Living</span>
           <span class="brand__tag">Assisted Living · Brooklyn Center, MN</span>
@@ -127,16 +123,15 @@
           <img src="images/activities.jpg" alt="Residents enjoying an activity together" width="1200" height="900" loading="lazy">
         </figure>
         <div>
-          <span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+          <span class="icon-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
           <h2 id="activities-title">Activities</h2>
           <p>Days at Mindful Care Living are shaped around the people who live here. We encourage residents to keep doing the things they love — and to try something new when they’d like to.</p>
           <ul class="check-list">
             <li>Conversation and companionship</li>
             <li>Games, puzzles, and hobbies</li>
-            <li>Music and favorite shows</li>
             <li>Time outdoors when the weather is nice</li>
             <li>Outings in the community</li>
-            <li>Celebrating birthdays and holidays together</li>
+            <li>Celebrating special moments together</li>
           </ul>
         </div>
       </div>
@@ -182,7 +177,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="images/logo.png" alt="" width="80" height="82">
+          <img src="images/logo.png" alt="" width="256" height="256">
           <span>Mindful Care Living<br>Assisted Living</span>
         </div>
         <p>A safe, supportive, and welcoming home for adults who need assistance with daily living — with dignity, independence, and quality of life.</p>

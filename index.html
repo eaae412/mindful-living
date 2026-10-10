@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>
     document.documentElement.classList.add("js");
-    try { if (localStorage.getItem("mcl-large-text") === "1") document.documentElement.classList.add("text-large"); } catch (e) {}
   </script>
   <script src="js/main.js" defer></script>
   <script type="application/ld+json">
@@ -49,9 +48,6 @@
         <span>Call us: <strong>(612) 483-1978</strong></span>
       </a>
       <p class="topbar__hours"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Tours by appointment: Mon–Sat, 9am–5pm</p>
-      <button type="button" class="text-size-toggle" aria-pressed="false" hidden>
-        <span class="text-size-toggle__a" aria-hidden="true">A+</span> Larger text
-      </button>
     </div>
   </div>
 
@@ -59,7 +55,7 @@
   <div class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="" width="80" height="82">
+        <img src="images/logo.png" alt="" width="256" height="256">
         <span>
           <span class="brand__name">Mindful Care Living</span>
           <span class="brand__tag">Assisted Living · Brooklyn Center, MN</span>
@@ -146,8 +142,8 @@
     <section class="section" aria-labelledby="welcome-title">
       <div class="container split">
         <figure class="split__media">
-          <!-- PHOTO: replace images/living-room.jpg with a photo of your living room -->
-          <img src="images/living-room.jpg" alt="The comfortable living room at Mindful Care Living" width="1200" height="900" loading="lazy">
+          <!-- PHOTO: images/dining-together.jpg -->
+          <img src="images/dining-together.jpg" alt="Older adults sharing a meal and friendly conversation around a dining table" width="724" height="483" loading="lazy">
         </figure>
         <div>
           <p class="eyebrow">Welcome</p>
@@ -255,7 +251,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="images/logo.png" alt="" width="80" height="82">
+          <img src="images/logo.png" alt="" width="256" height="256">
           <span>Mindful Care Living<br>Assisted Living</span>
         </div>
         <p>A safe, supportive, and welcoming home for adults who need assistance with daily living — with dignity, independence, and quality of life.</p>
