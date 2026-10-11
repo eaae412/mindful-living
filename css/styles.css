@@ -719,17 +719,6 @@ strong { font-weight: 700; }
 
 .contact-lines svg.icon { color: var(--green-dark); }
 
-/* Placeholder box for information still to be added */
-.placeholder-note {
-  padding: 1rem 1.25rem;
-  border: 2px dashed var(--heart);
-  border-radius: var(--radius-sm);
-  background: var(--white);
-  color: var(--text);
-}
-
-.placeholder-note strong { color: var(--heart); }
-
 /* Pull quote */
 .quote {
   max-width: 48rem;

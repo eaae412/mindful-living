@@ -120,13 +120,8 @@ Some photos on the site are still **placeholders** — a soft blue and green pic
 
 ## 6. Things still to fill in
 
-- [ ] **License / accreditation details.** Search for `[License` to find each spot:
-  - the bottom (footer) of **every** page — all six page files
-  - the "For referring professionals" box on the **Home** page (`index.html`)
-  - the "Licensing & Accreditation" section on the **About Us** page (`about.html`)
 - [ ] **Review the draft text** on the **Amenities & Daily Life** page (`amenities.html`). The *Activities* and *Dining* sections were written as a starting point. Please change them to match what you actually offer.
 - [ ] **Replace the placeholder photos** (see section 5).
-- [ ] **Activate the tour form** once the site is online (see section 3).
 
 ---
 
