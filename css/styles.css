@@ -301,8 +301,11 @@ strong { font-weight: 700; }
 
 .brand__tag {
   display: block;
-  color: var(--text-soft);
-  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  color: var(--green-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   line-height: 1.3;
 }
 
@@ -427,20 +430,23 @@ strong { font-weight: 700; }
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5em;
   margin: 0 0 0.75rem;
   color: var(--green-dark);
   font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
+/* Short line before the label; stays beside the first row if the label wraps */
 .eyebrow::before {
   content: "";
+  flex-shrink: 0;
   width: 2rem;
   height: 3px;
+  margin-top: calc(0.825em - 1.5px);
   border-radius: 3px;
   background: var(--sage);
 }
@@ -499,6 +505,7 @@ strong { font-weight: 700; }
 
 @media (min-width: 900px) {
   .hero__grid { grid-template-columns: 1.05fr 1fr; gap: 4rem; }
+  .hero .eyebrow { font-size: 0.82rem; }
 }
 
 /* Inner page title area */
@@ -712,17 +719,6 @@ strong { font-weight: 700; }
 
 .contact-lines svg.icon { color: var(--green-dark); }
 
-/* Placeholder box for information still to be added */
-.placeholder-note {
-  padding: 1rem 1.25rem;
-  border: 2px dashed var(--heart);
-  border-radius: var(--radius-sm);
-  background: var(--white);
-  color: var(--text);
-}
-
-.placeholder-note strong { color: var(--heart); }
-
 /* Pull quote */
 .quote {
   max-width: 48rem;
@@ -872,8 +868,8 @@ strong { font-weight: 700; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 1100px) {
-  .gallery { grid-template-columns: repeat(4, 1fr); }
+@media (min-width: 1024px) {
+  .gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
 .gallery figure {

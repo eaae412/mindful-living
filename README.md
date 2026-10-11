@@ -84,7 +84,7 @@ You can do this right on the GitHub website — no software needed.
 
 ## 5. How to change photos
 
-Every photo on the site is currently a **placeholder** — a soft blue and green picture that says *"PLACEHOLDER PHOTO"* and shows the file name to replace.
+Some photos on the site are still **placeholders** — a soft blue and green picture that says *"PLACEHOLDER PHOTO"* and shows the file name to replace.
 
 **To replace a photo, upload your photo with the exact same file name.**
 
@@ -98,16 +98,17 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 |---|---|
 | `home-front.jpg` | Home page (top), Gallery |
 | `dining-together.jpg` | Home page (Welcome section) |
-| `living-room.jpg` | Gallery |
 | `backyard.jpg` | About Us, Gallery |
-| `bedroom.jpg` | Care & Services (Assisted Living), Gallery |
-| `caregiver-support.jpg` | Care & Services (24/7 Personal Care) |
-| `transportation.jpg` | Care & Services (Daily Activities) |
-| `medication.jpg` | Care & Services (Medication Management) |
-| `activities.jpg` | Amenities & Daily Life (Activities), Gallery |
+| `back-entrance.jpg` | Gallery |
 | `dining-area.jpg` | Amenities & Daily Life (Dining), Gallery |
-| `kitchen.jpg` | Gallery |
 | `bathroom.jpg` | Gallery |
+| `bedroom.jpg` *(placeholder)* | Care & Services (Assisted Living) |
+| `caregiver-support.jpg` *(placeholder)* | Care & Services (24/7 Personal Care) |
+| `transportation.jpg` *(placeholder)* | Care & Services (Daily Activities) |
+| `medication.jpg` *(placeholder)* | Care & Services (Medication Management) |
+| `activities.jpg` *(placeholder)* | Amenities & Daily Life (Activities) |
+
+**Adding a new photo to the Gallery:** send it to Claude, or copy one of the `<li> … </li>` blocks in `gallery.html`, paste it below the others, and change the file name, description (`alt`), and caption.
 
 **Photo descriptions (alt text):** each photo has a short description for people who use screen readers, written like `alt="The comfortable living room at Mindful Care Living"`. If your new photo shows something different, update those words (see *How to change text*).
 
@@ -119,13 +120,8 @@ Every photo on the site is currently a **placeholder** — a soft blue and green
 
 ## 6. Things still to fill in
 
-- [ ] **License / accreditation details.** Search for `[License` to find each spot:
-  - the bottom (footer) of **every** page — all six page files
-  - the "For referring professionals" box on the **Home** page (`index.html`)
-  - the "Licensing & Accreditation" section on the **About Us** page (`about.html`)
 - [ ] **Review the draft text** on the **Amenities & Daily Life** page (`amenities.html`). The *Activities* and *Dining* sections were written as a starting point. Please change them to match what you actually offer.
 - [ ] **Replace the placeholder photos** (see section 5).
-- [ ] **Activate the tour form** once the site is online (see section 3).
 
 ---
 
